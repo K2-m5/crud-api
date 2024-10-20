@@ -1,0 +1,25 @@
+{
+  "name": "crud-api",
+  "version": "1.0.0",
+  "description": "simple crud api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/K2-m5/crud-api.git"
+  },
+  "keywords": [
+    "node",
+    "js",
+    "crud",
+    "api"
+  ],
+  "author": "Pablo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/K2-m5/crud-api/issues"
+  },
+  "homepage": "https://github.com/K2-m5/crud-api#readme"
+}
