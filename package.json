@@ -4,7 +4,10 @@
   "description": "simple crud api",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format": "prettier --write src/**/*.ts",
+    "dev": "cross-env NODE_ENV=development nodemon src/index.ts",
+    "prod": "cross-env NODE_ENV=production ts-node src/index.ts",
+    "lint": "eslint ./src --fix"
   },
   "repository": {
     "type": "git",
@@ -12,7 +15,7 @@
   },
   "keywords": [
     "node",
-    "js",
+    "ts",
     "crud",
     "api"
   ],
@@ -21,5 +24,32 @@
   "bugs": {
     "url": "https://github.com/K2-m5/crud-api/issues"
   },
-  "homepage": "https://github.com/K2-m5/crud-api#readme"
+  "homepage": "https://github.com/K2-m5/crud-api#readme",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.5",
+    "nodemon": "^3.1.7",
+    "prettier": "^3.3.3",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "eslint": "^8.43.0",
+    "prettier": "^2.8.8",
+    "@babel/preset-env": "^7.22.5",
+    "@babel/preset-typescript": "^7.22.5",
+    "@types/jest": "^29.5.2",
+    "@typescript-eslint/eslint-plugin": "^5.60.0",
+    "@typescript-eslint/parser": "^5.60.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "@types/uuid": "^10.0.0",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.1.0",
+    "ts-loader": "^9.4.3",
+    "tsconfig-paths": "^4.2.0",
+    "@types/node": "^22.7.7"
+  }
 }
