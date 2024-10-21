@@ -10,8 +10,18 @@ export interface User {
 export const users: User[] = [
   {
     id: uuidv4(),
-    username: 'pablo',
+    username: 'Pablo',
     age: 101,
     hobbies: ['lock', 'stock', 'two smoking barrels']
+  },
+  {
+    id: uuidv4(),
+    username: 'Tony',
+    age: 101,
+    hobbies: ['football', 'hockey']
   }
 ];
+
+export const findUserById = (userId: string): User | undefined => {
+  return users.find(user => user.id === userId)
+}
